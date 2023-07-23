@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const app = express();
+app.use(express.static( __dirname + '/public'));
 
 // Replace 'your_connection_string' with your MongoDB connection string
 const dbURI = 'mongodb://localhost:27017/studentidentity';
@@ -55,4 +56,4 @@ app.get('/retrieve', async (req, res) => {
 });
 
 // Serve static files from the 'public' directory
-app.use(express.static('public'));
+
