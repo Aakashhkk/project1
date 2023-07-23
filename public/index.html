@@ -1,0 +1,33 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <title>Node.js MongoDB TailwindCSS</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container mx-auto mt-10 max-w-md p-4">
+    <h1 class="text-2xl font-bold mb-4">Save and Retrieve Data</h1>
+    <div class="mb-4">
+      <input type="text" id="name" class="w-full border border-gray-400 rounded p-2" placeholder="Enter Name">
+    </div>
+    <div class="mb-4">
+      <input type="password" id="password" class="w-full border border-gray-400 rounded p-2" placeholder="Enter Password">
+    </div>
+    <div class="flex space-x-4">
+      <button id="saveButton" class="bg-blue-500 text-white px-4 py-2 rounded">Save Data</button>
+      <button id="showButton" class="bg-green-500 text-white px-4 py-2 rounded">Show Data</button>
+    </div>
+    <div id="dataContainer" class="mt-4"></div>
+  </div>
+
+  <script src="/scripts.js"></script>
+</body>
+</html>
